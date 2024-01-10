@@ -1,0 +1,42 @@
+<html> <head> <meta charset="ISO-8859-1">  
+<title>Insert title here</title> <link type="text/css" rel="stylesheet" href="loginp.css"> 
+</head>  <body>
+
+ <div class="LoginPageContainer">
+    <div class="LoginPageInnerContainer">
+        <div class="ImageContianer">
+            <img src="images/login_img.avif" width="700" height="440" class="GroupImage">
+        </div>
+        <div class="LoginFormContainer">
+            <div class="LoginFormInnerContainer">
+                <div class="LogoContainer">
+                    <img src="images/log-Ra.png" class="logo">
+                </div>
+                <header class="header">Log in</header>
+                <header class="subHeader">Welcome to <b>Computer world!</b> Please Enter your Details</header>
+
+                <form action="Login" method="post">
+                    <div class="inputContainer">
+                        <label class="label" for="emailAddress"><img src="https://i.imgur.com/Hn13wvm.png" class="labelIcon"><span>Email
+                                Address*</span></label>
+                        <input type="text" class="input"  name="user" placeholder="Enter your Email Address">
+                    </div>
+                    <div class="inputContainer">
+                        <label class="label" for="emailAddress"><img src="https://i.imgur.com/g5SvdfG.png"
+                                class="labelIcon"><span>Password*</span></label>
+                        <input type="text" class="input" name="pass" placeholder="Enter your Password">
+                    </div>
+                    <div class="OptionsContainer">
+                        <div class="checkboxContainer">
+                            <a href="login1.html" >Already creatd click here</a>
+                        </div>
+                        <a href="login1.html" class="ForgotPasswordLink">Forgot Password?</a>
+                    </div>
+                    <button class="LoginButton" onclick="Login.java" type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div> 
+    </body> 
+    </html> 

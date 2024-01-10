@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!------------------------------- Bootstrap link ----------------------------------->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!------------------------------ Iconify icons -------------------------------------->
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+  <!----------------------------- Custom css ------------------------------------------>
+  <link rel="stylesheet" href="css/searchfilter.css">
+</head>
+<body>
+  <!----------------------- Header Start ------------------>
+  <header>
+    <!-- Navigation -->
+    <nav class="navbar sticky sticky-top navbar-expand-lg navbar-dark ">
+      <div class="container">
+        <div class="logo">
+          <a class="navbar-brand" href="#"><img src="./images/Ralog.png" alt="" style="width: 100%;"></a>
+        </div>
+        <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas"
+          aria-controls="navbarOffcanvas" aria-expanded="false" aria-label="Toggle navigation">
+          <iconify-icon icon="fe:bar" style="color: white;" width="30" height="30" class="baricon"></iconify-icon>
+        </button>
+        <div class="justify-content-center navbar-collapse ">
+          <form class="d-flex align-items-center justify-content-center header-search" role="search">
+            <input class="form-control searchbox" type="text" placeholder="Search Products..." aria-label="Search" id="myinput">
+            <iconify-icon icon="tdesign:search" width="22" height="22" class="searchicon"></iconify-icon>
+          </form>
+        </div>
+        <div>
+          <ul class="  navbar-nav mr-auto w-100  d-sm-none d-md-none d-lg-inline-flex d-none justify-content-end ">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+       
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+
+          </ul>
+        </div>
+        <div class="offcanvas offcanvas-end bg-canvas" id="navbarOffcanvas" tabindex="-1"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-light" id="offcanvasNavbarLabel"></h5>
+            <button type="button" class="btn-close  btn-close-white text-reset" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <a class="menu-item m-3" aria-current="page" href="index.html">Home</a>
+              <a class="menu-item m-3" href=".html">About</a>
+              <a class="menu-item m-3" href="#">Blog</a>
+              <a class="menu-item m-3" href="contactwebpage.html">Contact</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-------------------------- Header End -------------------------->
+  
+  <!------------------------- Product Card Start ------------------->
+  <div class="container pt-md-4">
+    <div id="para" class="text-danger mt-4 text-center"></div>
+    <div class="row pb-5 mb-md-5" id="card"></div>
+  </div>
+  <!----------------------- Product Card End ----------------------->
+
+  <!----------------------- Footer Start --------------------------->
+  <footer>
+    <div class="footer-section pb-3 pt-5">
+      <div class="container mb-4">
+        <div class="row d-flex justify-content-between">
+          <div class="col-xl-5 col-lg-5 col-md-8 col-sm-8">
+            <div class="footer-logo">
+              <img src="./images/Ralog.png">
+
+            </div>
+            <div class="footer-title">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum sit hic cupiditate libero explicabo quis optio est saepe! Assumenda, ullam?</p>
+            </div>
+            <ul class="footer-icons">
+              <li>
+                <a href="#"> <iconify-icon icon="logos:facebook" width="20" height="20"
+                    class="facebook-icon socialmedia-icons"></iconify-icon></a>
+              </li>
+              <li>
+                <a href="#"><iconify-icon icon="skill-icons:instagram" width="20" height="20"
+                    class="instagram-icon socialmedia-icons"></iconify-icon></a>
+              </li>
+              <li>
+                <a href="#"><iconify-icon icon="skill-icons:twitter" width="20" height="20"
+                    class="twitter-icon socialmedia-icons"></iconify-icon>
+                </a>
+              </li>
+              <li>
+                <a href="#"><iconify-icon icon="logos:youtube-icon" width="20" height="20"
+                    class="youtube-icon socialmedia-icons"></iconify-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 footer-head">
+            <div class="footer-title footer-list-items">
+              <h3>Useful Links</h3>
+              <ul class="footer-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+               
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-2 col-md-8 col-sm-6 footer-head">
+            <div class="footer-title footer-list-items">
+              <h3>Online Shop</h3>
+              <ul class="footer-list">
+                <li><a href="#">Laptop</a></li>
+                <li><a href="#">Apple Macbook</a></li>
+                <li><a href="#">Headphones</a></li>
+                <li><a href="#">Earphones</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+            <div class="footer-title footer-contact footer-list-items">
+              <h3>Contact Us</h3>
+              <ul class="footer-list">
+                <li>
+                  <iconify-icon icon="mingcute:phone-fill" style="color: white;" width="18" height="18"
+                    class="fcontact-icons"></iconify-icon>
+                  <a href="#">+19 9999999999</a>
+                </li>
+                <li>
+                  <iconify-icon icon="quill:mail" style="color: white;" width="18" height="18"
+                    class="fcontact-icons"></iconify-icon>
+                  <span class="footer-list-item">Racomputer@gmail.com</span>
+                </li>
+                <li>
+                  <iconify-icon icon="zondicons:location" style="color: white;" width="18" height="18"
+                    class="fcontact-icons"></iconify-icon>
+                  <span class="footer-list-item">123/33 Faridabad</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </footer>
+  <!------------------------------- Footer End ------------------------------>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="./js/searchfilter.js"></script>
+</body>
+</html>

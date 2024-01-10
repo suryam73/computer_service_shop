@@ -1,0 +1,323 @@
+/*======================= Fonts ==============================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", sans-serif;
+}
+:root {
+    --bg-color: #7a60f4;
+    --text-color1: #41d5ce;
+    --text-color2: #ffffff;
+    --btn-color: #ffcd4b;
+    --btn-hover:#ffba04;
+}
+
+/*=========================== Navbar =======================*/
+.navbar .navbar-brand {
+    font-size: 24px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.navbar {
+    background-color: var(--bg-color);
+}
+.navbar .nav-item {
+    margin: 10px 10px;
+}
+.navbar .nav-link {
+    font-size: 16px;
+    margin-left: 5px;
+    font-weight: 500;
+}
+.navbar-nav .nav-item .nav-link:hover{
+    color:var(--btn-color2);
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: var(--text-color2);
+}
+.navbar-dark .navbar-toggler {
+    color: rgba(255, 255, 255, .55);
+    border: none;
+}
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+}
+.header-search {
+    flex: 0 0 50%;
+    position: relative;
+    margin-top: 5px;
+    padding-bottom: 10px;
+}
+.searchbox:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+    border: 1px solid #ced4da;
+}
+.searchicon {
+    position: absolute;
+    right: 16px;
+    top: 7px
+}
+.logo {
+  
+    width: 130px;
+    height: 58px;
+    vertical-align: middle;
+   
+}
+.searchbar {
+    color: rgba(255, 255, 255, .55);
+    display: none;
+}
+.baricon{
+    position: relative;
+    top:4px;
+}
+
+/*======================= Product Card ========================== */
+.card {
+    border-radius: 20px;
+    overflow: hidden;
+    border: 0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    transition: all 0.15s ease;
+    height: 100%;
+}
+ .card-img-top {
+    width: 100%;
+}
+h5{
+    font-size: 1.2rem;
+}
+
+/*===================== Add to cart button ====================== */
+.buy-btn {
+    background: var(--btn-color);
+    color: var(--text-color2);
+    border: none;
+    font-size: 14px;
+    height:40px;
+}
+.buy-btn:hover {
+    background-color: var(--btn-hover);
+    color: var(--text-color2);
+
+}
+.cart-icon {
+    position: relative;
+    top: 4px;
+    left: -4px;
+}
+.buy-btn:focus {
+    box-shadow: none;
+    outline: 0;
+}
+#para {
+    font-size: 22px;
+    font-weight: 500;
+    padding-top: 20px;
+}
+
+/*========================= Footer ============================ */
+.footer-logo {
+    width: 160px;
+}
+.footer-logo img {
+    width: 100%;
+    height: 100%;
+}
+.footer-title p {
+    margin-bottom: 21px;
+    line-height: 1.5;
+    font-size: 14px;
+    color: var(--text-color2);
+    word-spacing: 2px;
+}
+.footer-list-item {
+    margin-bottom: 21px;
+    line-height: 1.5;
+    font-size: 14px;
+    color: var(--text-color2);
+    word-spacing: 2px;
+    padding-left: 5px;
+}
+.footer-head{
+    margin-bottom: 20px;
+}
+.footer-section {
+    color: var(--text-color2);
+    background-color: var(--bg-color);
+}
+.footer-section h3 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: var(--btn-color);
+}
+.footer-list {
+    padding: 0;
+}
+.footer-list li {
+    list-style-type: none;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.footer-list li a {
+    text-decoration: none;
+    color: var(--text-color2);
+    color: var(--text-color2);
+    font-size: 14px;
+    font-weight: 400;
+}
+.footer-para {
+    line-height: 1.4;
+}
+.fcontact-icons{
+    position: relative;
+    top:5px;
+    left:0px;
+}
+.footer-icons{
+    display:flex;
+}
+.footer-icons li{
+    list-style-type: none;
+}
+ul{
+    padding-left: 0;
+}
+.socialmedia-icons {
+    margin: 5px;
+    padding: 2px;
+    border-radius: 5px;
+    transition: all .4s;
+}
+.socialmedia-icons:hover {
+    transform: translateY(-5px);
+}
+.youtube-icon {
+    background-color: red;
+}
+.twitter-icon {
+    background-color: rgb(29, 155, 240)
+}
+.instagram-icon {
+    background: linear-gradient(45deg, #f09433 0, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+.facebook-icon {
+    background-color: rgb(24, 119, 242);
+}
+.copyright{
+    font-size: 14px;
+}
+
+/*======================== offcanvas =========================*/
+.offcanvas {
+    background-color:var(--bg-color);
+}
+ .btn-close {
+    opacity:1.5;
+}
+.btn-close:focus{
+    outline:none;
+    box-shadow: none;
+    border:none;   
+}
+.menu-item {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+.card-head {
+    width: 100%;
+    font-weight:600;
+}
+.card-text{
+    font-size: 14px;
+}
+.card-image{
+    height:100%;
+}
+
+/*============================= Media Queries =======================================*/
+@media screen and (min-width: 768px){
+    .header-search .form-control {
+        width: 98%;
+    }
+    .footer-title p{
+        width:380px;
+    }
+} 
+@media screen and (min-width: 992px){
+    .header-search .form-control {
+        width: 400px;
+    }
+} 
+
+@media screen and (max-width: 575px) {
+    .card {
+        align-items: center;
+    }
+    .cardbox {
+        width: 75%;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        text-align: center;
+    }
+    .footer-contact p{
+        line-height: 1;
+    }
+    .footer-title p{
+        margin-bottom: 15px;
+        font-size: 12px;
+    }
+    h5{
+        font-size:14px;
+    }  
+    .card-text{
+        font-size: 12px;
+    }
+    .buy-btn{
+        font-size:12px;
+    }
+    .form-control::placeholder{
+        font-size: 14px;
+    }
+    .footer-list li a{
+        font-size: 12px;
+    }
+    .footer-list-item{
+        font-size: 12px;
+    }
+    .copyright{
+        font-size: 12px;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    .footer-head{
+        margin-bottom:0px;
+    }
+    .footer-list-items {
+        padding-top: 10px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .footer-logo img {
+        width: 85%;
+    }
+    .logo {
+        width: 125px;
+        height: 58px
+    } 
+}
+
+
+
